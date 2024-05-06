@@ -1,7 +1,8 @@
-import 'package:fibromyalgia_hospital/utils/styles/Strings/app_strings.dart';
-import 'package:fibromyalgia_hospital/utils/styles/Text_style/app_text_style.dart';
-import 'package:fibromyalgia_hospital/utils/styles/colors/app_colors.dart';
-import 'package:fibromyalgia_hospital/utils/widgets/custom_elevated_button.dart';
+
+import 'package:fibrohospital/utils/styles/Strings/app_strings.dart';
+import 'package:fibrohospital/utils/styles/Text_style/app_text_style.dart';
+import 'package:fibrohospital/utils/styles/colors/app_colors.dart';
+import 'package:fibrohospital/utils/widgets/custom_elevated_button.dart';
 import 'package:flutter/material.dart';
 import 'package:otp_text_field/otp_text_field.dart';
 import 'package:otp_text_field/style.dart';

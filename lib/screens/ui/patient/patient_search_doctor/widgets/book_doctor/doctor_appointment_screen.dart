@@ -1,20 +1,29 @@
-import 'package:fibromyalgia_hospital/screens/ui/patient/patient_setting/patient_profile/custom_profile_text_field.dart';
-import 'package:fibromyalgia_hospital/screens/ui/patient/patient_search_doctor/widgets/book_doctor/doctor_appointment_screen_2.dart';
-import 'package:fibromyalgia_hospital/utils/styles/Strings/app_strings.dart';
-import 'package:fibromyalgia_hospital/utils/styles/Text_style/app_text_style.dart';
-import 'package:fibromyalgia_hospital/utils/styles/assets/app_assets.dart';
-import 'package:fibromyalgia_hospital/utils/styles/colors/app_colors.dart';
-import 'package:fibromyalgia_hospital/utils/widgets/custom_background.dart';
-import 'package:fibromyalgia_hospital/utils/widgets/custom_elevated_button.dart';
+import 'package:fibrohospital/screens/ui/patient/patient_setting/patient_profile/custom_profile_text_field.dart';
+import 'package:fibrohospital/screens/ui/patient/patient_search_doctor/widgets/book_doctor/doctor_appointment_screen_2.dart';
+import 'package:fibrohospital/utils/styles/Strings/app_strings.dart';
+import 'package:fibrohospital/utils/styles/Text_style/app_text_style.dart';
+import 'package:fibrohospital/utils/styles/assets/app_assets.dart';
+import 'package:fibrohospital/utils/styles/colors/app_colors.dart';
+import 'package:fibrohospital/utils/widgets/custom_background.dart';
+import 'package:fibrohospital/utils/widgets/custom_elevated_button.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_rating_bar/flutter_rating_bar.dart';
 import 'package:iconsax/iconsax.dart';
 
 import '../../../../../../utils/widgets/custom_arrow_back.dart';
 
-class DoctorAppointmentScreen extends StatelessWidget {
-  const DoctorAppointmentScreen({super.key});
+class DoctorAppointmentScreen extends StatefulWidget {
+  DoctorAppointmentScreen({super.key});
   static const String routeName = 'DoctorAppointmentScreen';
+
+  @override
+  State<DoctorAppointmentScreen> createState() => _DoctorAppointmentScreenState();
+}
+
+class _DoctorAppointmentScreenState extends State<DoctorAppointmentScreen> {
+  TextEditingController ?patientNameController = TextEditingController();
+
+  TextEditingController ?patientContactNumberController = TextEditingController();
 
   @override
   Widget build(BuildContext context) {
@@ -153,9 +162,11 @@ class DoctorAppointmentScreen extends StatelessWidget {
                   const SizedBox(
                     height: 20,
                   ),
-                  const CustomProfileTextField(icon: Iconsax.personalcard,labelName: AppStrings.patientName),
+                  CustomProfileTextField(icon: Iconsax.personalcard,labelName: AppStrings.patientName,
+                    pController: patientNameController,),
                   const SizedBox(height: 10,),
-                  const CustomProfileTextField(icon: Icons.phone,labelName: AppStrings.contactNumber),
+                   CustomProfileTextField(icon: Icons.phone,labelName: AppStrings.contactNumber,
+                     pController: patientContactNumberController,),
                   const SizedBox(height: 20,),
                   const Text(AppStrings.whoPatient,style: AppTextStyle.styleMedium18,),
                   const SizedBox(

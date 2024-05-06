@@ -1,10 +1,10 @@
-import 'package:fibromyalgia_hospital/core/local_database/catch_helper.dart';
-import 'package:fibromyalgia_hospital/core/local_database/services_locator.dart';
-import 'package:fibromyalgia_hospital/screens/ui/initial_pages/data/onBoarding_model.dart';
-import 'package:fibromyalgia_hospital/screens/ui/log_in_and_sign_in/join_us_screen.dart';
-import 'package:fibromyalgia_hospital/utils/styles/Text_style/app_text_style.dart';
-import 'package:fibromyalgia_hospital/utils/styles/colors/app_colors.dart';
-import 'package:fibromyalgia_hospital/utils/widgets/custom_background.dart';
+import 'package:fibrohospital/core/local_database/catch_helper.dart';
+import 'package:fibrohospital/core/local_database/services_locator.dart';
+import 'package:fibrohospital/screens/ui/initial_pages/data/onBoarding_model.dart';
+import 'package:fibrohospital/screens/ui/log_in_and_sign_in/join_us_screen.dart';
+import 'package:fibrohospital/utils/styles/Text_style/app_text_style.dart';
+import 'package:fibrohospital/utils/styles/colors/app_colors.dart';
+import 'package:fibrohospital/utils/widgets/custom_background.dart';
 import 'package:flutter/material.dart';
 
 class OnBoardingScreen extends StatefulWidget {

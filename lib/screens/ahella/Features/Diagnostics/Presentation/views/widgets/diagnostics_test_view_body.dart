@@ -1,5 +1,5 @@
-import 'package:fibromyalgia_hospital/screens/ahella/Core/widgets/custom_header_section.dart';
-import 'package:fibromyalgia_hospital/screens/ahella/Features/Diagnostics/Presentation/views/widgets/diagnostics_list_view.dart';
+import 'package:fibrohospital/screens/ahella/Core/widgets/custom_header_section.dart';
+import 'package:fibrohospital/screens/ahella/Features/Diagnostics/Presentation/views/widgets/diagnostics_list_view.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
 import 'diagnostics_test_details.dart';

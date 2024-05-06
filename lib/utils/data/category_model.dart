@@ -1,4 +1,6 @@
-import 'package:fibromyalgia_hospital/utils/styles/Strings/app_strings.dart';
+
+
+import 'package:fibrohospital/utils/styles/Strings/app_strings.dart';
 
 class CategoryModel {
   final String imagePath ;

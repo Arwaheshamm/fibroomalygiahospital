@@ -1,18 +1,28 @@
-import 'package:fibromyalgia_hospital/screens/ui/patient/patient_setting/patient_profile/custom_profile_text_field.dart';
-import 'package:fibromyalgia_hospital/screens/ui/patient/patient_home/widgets/types_record_model.dart';
-import 'package:fibromyalgia_hospital/utils/styles/Strings/app_strings.dart';
-import 'package:fibromyalgia_hospital/utils/styles/Text_style/app_text_style.dart';
-import 'package:fibromyalgia_hospital/utils/styles/colors/app_colors.dart';
-import 'package:fibromyalgia_hospital/utils/widgets/custom_arrow_back.dart';
-import 'package:fibromyalgia_hospital/utils/widgets/custom_background.dart';
-import 'package:fibromyalgia_hospital/utils/widgets/custom_elevated_button.dart';
+import 'package:fibrohospital/screens/ui/patient/patient_setting/patient_profile/custom_profile_text_field.dart';
+import 'package:fibrohospital/screens/ui/patient/patient_home/widgets/types_record_model.dart';
+import 'package:fibrohospital/utils/styles/Strings/app_strings.dart';
+import 'package:fibrohospital/utils/styles/Text_style/app_text_style.dart';
+import 'package:fibrohospital/utils/styles/colors/app_colors.dart';
+import 'package:fibrohospital/utils/widgets/custom_arrow_back.dart';
+import 'package:fibrohospital/utils/widgets/custom_background.dart';
+import 'package:fibrohospital/utils/widgets/custom_elevated_button.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 import 'package:iconsax/iconsax.dart';
 
-class AddRecordScreen extends StatelessWidget {
-  const AddRecordScreen({super.key});
+class AddRecordScreen extends StatefulWidget {
+
   static const String routeName = 'AddRecordScreen';
+
+  @override
+  State<AddRecordScreen> createState() => _AddRecordScreenState();
+}
+
+class _AddRecordScreenState extends State<AddRecordScreen> {
+  TextEditingController ?recordForController = TextEditingController();
+
+  TextEditingController ?recordCreatedOnController = TextEditingController();
+
 
   @override
   Widget build(BuildContext context) {
@@ -78,8 +88,8 @@ class AddRecordScreen extends StatelessWidget {
                   SizedBox(
                     height: height * .15,
                   ),
-                  const CustomProfileTextField(
-                      icon: Iconsax.edit, labelName: AppStrings.recordFor),
+                  CustomProfileTextField(
+                      icon: Iconsax.edit, labelName: AppStrings.recordFor,pController: recordForController,),
                   const SizedBox(
                     height: 20,
                   ),
@@ -122,9 +132,9 @@ class AddRecordScreen extends StatelessWidget {
                   const SizedBox(
                     height: 20,
                   ),
-                  const CustomProfileTextField(
+                  CustomProfileTextField(
                       icon: Iconsax.calendar,
-                      labelName: AppStrings.recordCreatedOn),
+                      labelName: AppStrings.recordCreatedOn,pController: recordCreatedOnController,),
                   const SizedBox(
                     height: 20,
                   ),

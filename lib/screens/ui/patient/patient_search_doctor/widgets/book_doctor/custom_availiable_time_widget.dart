@@ -1,6 +1,6 @@
-import 'package:fibromyalgia_hospital/screens/ui/patient/patient_search_doctor/widgets/book_doctor/custom_time_available_container.dart';
-import 'package:fibromyalgia_hospital/utils/styles/Strings/app_strings.dart';
-import 'package:fibromyalgia_hospital/utils/styles/Text_style/app_text_style.dart';
+import 'package:fibrohospital/screens/ui/patient/patient_search_doctor/widgets/book_doctor/custom_time_available_container.dart';
+import 'package:fibrohospital/utils/styles/Strings/app_strings.dart';
+import 'package:fibrohospital/utils/styles/Text_style/app_text_style.dart';
 import 'package:flutter/material.dart';
 
 class CustomAvailiableTimeWidget extends StatelessWidget {

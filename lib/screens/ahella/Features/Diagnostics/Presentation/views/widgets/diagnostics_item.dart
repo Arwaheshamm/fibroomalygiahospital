@@ -1,6 +1,6 @@
-import 'package:fibromyalgia_hospital/screens/ahella/Features/Diagnostics/Data/Models/diagnostics_model.dart';
-import 'package:fibromyalgia_hospital/screens/ahella/Features/Diagnostics/Presentation/views/widgets/diagnostics_item_footer.dart';
-import 'package:fibromyalgia_hospital/screens/ahella/Features/Diagnostics/Presentation/views/widgets/diagnostics_item_header.dart';
+import 'package:fibrohospital/screens/ahella/Features/Diagnostics/Data/Models/diagnostics_model.dart';
+import 'package:fibrohospital/screens/ahella/Features/Diagnostics/Presentation/views/widgets/diagnostics_item_footer.dart';
+import 'package:fibrohospital/screens/ahella/Features/Diagnostics/Presentation/views/widgets/diagnostics_item_header.dart';
 import 'package:flutter/material.dart';
 class DiagnosticsItem extends StatelessWidget {
   const DiagnosticsItem({super.key, required this.diagnosticsModel});

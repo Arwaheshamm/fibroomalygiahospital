@@ -1,4 +1,4 @@
-import 'package:fibromyalgia_hospital/screens/ui/general_screen/pharmacies_model.dart';
+import 'package:fibrohospital/screens/ui/general_screen/pharmacies_model.dart';
 
 class Pharmaciesmodel {
   String imagePath;

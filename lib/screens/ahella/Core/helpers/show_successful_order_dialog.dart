@@ -1,7 +1,7 @@
-import 'package:fibromyalgia_hospital/screens/ahella/Core/widgets/custom_elevated_button.dart';
-import 'package:fibromyalgia_hospital/screens/ahella/Features/Store/Presentation/views/store_view.dart';
-import 'package:fibromyalgia_hospital/screens/ui/doctor/general_doctor_home_screen.dart';
-import 'package:fibromyalgia_hospital/utils/constants.dart';
+import 'package:fibrohospital/screens/ahella/Core/widgets/custom_elevated_button.dart';
+import 'package:fibrohospital/screens/ahella/Features/Store/Presentation/views/store_view.dart';
+import 'package:fibrohospital/screens/ui/doctor/general_doctor_home_screen.dart';
+import 'package:fibrohospital/utils/constants.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 

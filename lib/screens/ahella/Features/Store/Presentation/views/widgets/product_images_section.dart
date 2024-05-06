@@ -1,5 +1,5 @@
-import 'package:fibromyalgia_hospital/screens/ahella/Core/widgets/custom_elevated_button.dart';
-import 'package:fibromyalgia_hospital/screens/ahella/Features/Store/Data/Models/store_model.dart';
+import 'package:fibrohospital/screens/ahella/Core/widgets/custom_elevated_button.dart';
+import 'package:fibrohospital/screens/ahella/Features/Store/Data/Models/store_model.dart';
 import 'package:flutter/material.dart';
 class ProductImagesSection extends StatelessWidget {
   const ProductImagesSection({super.key, required this.storeModel});

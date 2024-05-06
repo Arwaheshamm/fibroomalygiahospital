@@ -1,12 +1,12 @@
 import 'package:cloud_firestore/cloud_firestore.dart';
-import 'package:fibromyalgia_hospital/screens/ui/patient/patient_setting/patient_profile/custom_profile_text_field.dart';
-import 'package:fibromyalgia_hospital/utils/styles/Strings/app_strings.dart';
-import 'package:fibromyalgia_hospital/utils/styles/Text_style/app_text_style.dart';
-import 'package:fibromyalgia_hospital/utils/styles/assets/app_assets.dart';
-import 'package:fibromyalgia_hospital/utils/styles/colors/app_colors.dart';
-import 'package:fibromyalgia_hospital/utils/widgets/custom_arrow_back.dart';
-import 'package:fibromyalgia_hospital/utils/widgets/custom_background.dart';
-import 'package:fibromyalgia_hospital/utils/widgets/custom_elevated_button.dart';
+import 'package:fibrohospital/screens/ui/patient/patient_setting/patient_profile/custom_profile_text_field.dart';
+import 'package:fibrohospital/utils/styles/Strings/app_strings.dart';
+import 'package:fibrohospital/utils/styles/Text_style/app_text_style.dart';
+import 'package:fibrohospital/utils/styles/assets/app_assets.dart';
+import 'package:fibrohospital/utils/styles/colors/app_colors.dart';
+import 'package:fibrohospital/utils/widgets/custom_arrow_back.dart';
+import 'package:fibrohospital/utils/widgets/custom_background.dart';
+import 'package:fibrohospital/utils/widgets/custom_elevated_button.dart';
 import 'package:flutter/material.dart';
 import 'package:iconsax/iconsax.dart';
 
@@ -35,9 +35,11 @@ class _ProfileDoctorScreenState extends State<ProfileDoctorScreen> {
     // Call the user's CollectionReference to add a new user
     return doctordata
         .add({
-      ' name'= doctorNameController.text,
-      'contactnumber'= doctorContactNumberController.text,
-      'age': doctorDateofbirthController ,
+      ' name': doctorNameController!.text,
+      'contactnumber': doctorContactNumberController!.text,
+      'age': doctorDateofbirthController!.text ,
+      'location': doctorLocationController!.text,
+      'biography': doctorBiographyController!.text ,
     })
         .then((value) => print("User Added"))
         .catchError((error) => print("Failed to add user: $error"));
@@ -50,7 +52,7 @@ class _ProfileDoctorScreenState extends State<ProfileDoctorScreen> {
       body: SafeArea(
         child: Stack(
           children: [
-            const CustomBackground(),
+             CustomBackground(),
             Column(
               children: [
                 Container(
@@ -129,7 +131,7 @@ class _ProfileDoctorScreenState extends State<ProfileDoctorScreen> {
                 ),
                 Expanded(
                   child: ListView(
-                    children: const [
+                    children:  [
                       Padding(
                         padding: EdgeInsets.only(left: 20.0, right: 20),
                         child: Column(

@@ -1,5 +1,5 @@
-import 'package:fibromyalgia_hospital/screens/ahella/Features/Payment/Presentation/views/widgets/payment_option_is_not_selected_leading_icon.dart';
-import 'package:fibromyalgia_hospital/screens/ahella/Features/Payment/Presentation/views/widgets/payment_option_is_selected_leading_icon.dart';
+import 'package:fibrohospital/screens/ahella/Features/Payment/Presentation/views/widgets/payment_option_is_not_selected_leading_icon.dart';
+import 'package:fibrohospital/screens/ahella/Features/Payment/Presentation/views/widgets/payment_option_is_selected_leading_icon.dart';
 import 'package:flutter/material.dart';
 class SelectPaymentOptionWidget extends StatelessWidget {
   const SelectPaymentOptionWidget({

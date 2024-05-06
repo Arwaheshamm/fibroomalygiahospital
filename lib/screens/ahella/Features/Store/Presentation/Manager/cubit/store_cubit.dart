@@ -1,4 +1,4 @@
-import 'package:fibromyalgia_hospital/screens/ahella/Features/Store/Data/Models/store_model.dart';
+import 'package:fibrohospital/screens/ahella/Features/Store/Data/Models/store_model.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 
 part 'store_state.dart';

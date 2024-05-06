@@ -1,8 +1,8 @@
-import 'package:fibromyalgia_hospital/screens/ahella/Core/widgets/custom_elevated_button.dart';
-import 'package:fibromyalgia_hospital/screens/ahella/Core/widgets/custom_header_section.dart';
-import 'package:fibromyalgia_hospital/screens/ahella/Features/Cart/views/cart_view.dart';
-import 'package:fibromyalgia_hospital/screens/ahella/Features/Store/Data/Models/store_model.dart';
-import 'package:fibromyalgia_hospital/screens/ahella/Features/Store/Presentation/views/widgets/another_products_section.dart';
+import 'package:fibrohospital/screens/ahella/Core/widgets/custom_elevated_button.dart';
+import 'package:fibrohospital/screens/ahella/Core/widgets/custom_header_section.dart';
+import 'package:fibrohospital/screens/ahella/Features/Cart/views/cart_view.dart';
+import 'package:fibrohospital/screens/ahella/Features/Store/Data/Models/store_model.dart';
+import 'package:fibrohospital/screens/ahella/Features/Store/Presentation/views/widgets/another_products_section.dart';
 import 'package:flutter/material.dart';
 import 'equipment_info_card.dart';
 import 'product_images_section.dart';

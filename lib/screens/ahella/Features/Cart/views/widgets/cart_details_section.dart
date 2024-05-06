@@ -1,4 +1,4 @@
-import 'package:fibromyalgia_hospital/screens/ahella/Core/theming/my_colors.dart';
+import 'package:fibrohospital/screens/ahella/Core/theming/my_colors.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 import 'package:iconsax/iconsax.dart';
@@ -22,6 +22,14 @@ class _CartDetailsSectionState extends State<CartDetailsSection> {
   Object? val = -1;
   String? selectedValue;
   String dropdownValue = 'one';
+  TextEditingController ?nameController = TextEditingController();
+
+  TextEditingController ?contactNumberController = TextEditingController();
+
+  TextEditingController ?emailController = TextEditingController();
+
+  TextEditingController ?addressController = TextEditingController();
+
 
 
   @override
@@ -70,20 +78,20 @@ class _CartDetailsSectionState extends State<CartDetailsSection> {
                         crossAxisAlignment: CrossAxisAlignment.start,
                         children: [
 
-                          const CustomProfileTextField(
+                           CustomProfileTextField(
                               icon: Iconsax.personalcard,
-                              labelName: AppStrings.name),
+                              labelName: AppStrings.name,pController: nameController,),
                           const SizedBox(
                             height: 20,
                           ),
-                          const CustomProfileTextField(
+                           CustomProfileTextField(
                               icon: Icons.phone,
-                              labelName: AppStrings.contactNumber),
+                              labelName: AppStrings.contactNumber,pController: contactNumberController,),
                           const SizedBox(
                             height: 20,
                           ),
-                          const CustomProfileTextField(
-                              icon: Icons.email, labelName: AppStrings.email),
+                          CustomProfileTextField(
+                              icon: Icons.email, labelName: AppStrings.email,pController: emailController,),
                           const SizedBox(
                             height: 20,
                           ),
@@ -105,9 +113,9 @@ class _CartDetailsSectionState extends State<CartDetailsSection> {
                           //     border: OutlineInputBorder(borderRadius: BorderRadius.circular(10)),
                           //   ),
                           // ),
-                          const CustomProfileTextField(
+                           CustomProfileTextField(
                               icon: Icons.home,
-                              labelName: AppStrings.address),
+                              labelName: AppStrings.address,pController: addressController,),
 
                           // Text(
                           //   'Gander',

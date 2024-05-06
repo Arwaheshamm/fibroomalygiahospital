@@ -1,4 +1,4 @@
-import 'package:fibromyalgia_hospital/screens/ahella/Features/Store/Presentation/views/widgets/store_category_item.dart';
+import 'package:fibrohospital/screens/ahella/Features/Store/Presentation/views/widgets/store_category_item.dart';
 import 'package:flutter/material.dart';
 
 class StoreCategoriesSection extends StatelessWidget {

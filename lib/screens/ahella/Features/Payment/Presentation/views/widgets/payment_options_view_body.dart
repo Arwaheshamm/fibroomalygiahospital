@@ -1,6 +1,6 @@
-import 'package:fibromyalgia_hospital/screens/ahella/Core/widgets/custom_elevated_button.dart';
-import 'package:fibromyalgia_hospital/screens/ahella/Features/Payment/Presentation/views/credit_details_view.dart';
-import 'package:fibromyalgia_hospital/screens/ahella/Features/Payment/Presentation/views/widgets/select_payment_option_widget.dart';
+import 'package:fibrohospital/screens/ahella/Core/widgets/custom_elevated_button.dart';
+import 'package:fibrohospital/screens/ahella/Features/Payment/Presentation/views/credit_details_view.dart';
+import 'package:fibrohospital/screens/ahella/Features/Payment/Presentation/views/widgets/select_payment_option_widget.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
 

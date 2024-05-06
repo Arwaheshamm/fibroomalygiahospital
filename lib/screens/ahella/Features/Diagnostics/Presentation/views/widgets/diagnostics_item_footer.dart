@@ -1,6 +1,6 @@
-import 'package:fibromyalgia_hospital/screens/ahella/Core/widgets/custom_elevated_button.dart';
-import 'package:fibromyalgia_hospital/screens/ahella/Features/Diagnostics/Data/Models/diagnostics_model.dart';
-import 'package:fibromyalgia_hospital/screens/ui/patient/patient_search_doctor/patient_details_screen.dart';
+import 'package:fibrohospital/screens/ahella/Core/widgets/custom_elevated_button.dart';
+import 'package:fibrohospital/screens/ahella/Features/Diagnostics/Data/Models/diagnostics_model.dart';
+import 'package:fibrohospital/screens/ui/patient/patient_search_doctor/patient_details_screen.dart';
 import 'package:flutter/material.dart';
 
 class DiagnosticsItemFooter extends StatelessWidget {

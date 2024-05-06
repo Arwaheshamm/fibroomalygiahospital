@@ -1,7 +1,7 @@
-import 'package:fibromyalgia_hospital/screens/ahella/Core/widgets/custom_header_section.dart';
-import 'package:fibromyalgia_hospital/screens/ahella/Core/widgets/custom_text_form_field.dart';
-import 'package:fibromyalgia_hospital/screens/ahella/Features/Store/Presentation/views/widgets/store_categories_section.dart';
-import 'package:fibromyalgia_hospital/screens/ahella/Features/Store/Presentation/views/widgets/store_list_view.dart';
+import 'package:fibrohospital/screens/ahella/Core/widgets/custom_header_section.dart';
+import 'package:fibrohospital/screens/ahella/Core/widgets/custom_text_form_field.dart';
+import 'package:fibrohospital/screens/ahella/Features/Store/Presentation/views/widgets/store_categories_section.dart';
+import 'package:fibrohospital/screens/ahella/Features/Store/Presentation/views/widgets/store_list_view.dart';
 import 'package:flutter/material.dart';
 
 class StoreViewBody extends StatelessWidget {

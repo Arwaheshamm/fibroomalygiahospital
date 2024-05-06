@@ -1,17 +1,31 @@
-import 'package:fibromyalgia_hospital/screens/ui/patient/patient_setting/patient_profile/custom_profile_text_field.dart';
-import 'package:fibromyalgia_hospital/utils/styles/Strings/app_strings.dart';
-import 'package:fibromyalgia_hospital/utils/styles/Text_style/app_text_style.dart';
-import 'package:fibromyalgia_hospital/utils/styles/assets/app_assets.dart';
-import 'package:fibromyalgia_hospital/utils/styles/colors/app_colors.dart';
-import 'package:fibromyalgia_hospital/utils/widgets/custom_arrow_back.dart';
-import 'package:fibromyalgia_hospital/utils/widgets/custom_background.dart';
-import 'package:fibromyalgia_hospital/utils/widgets/custom_elevated_button.dart';
+import 'package:fibrohospital/screens/ui/patient/patient_setting/patient_profile/custom_profile_text_field.dart';
+import 'package:fibrohospital/utils/styles/Strings/app_strings.dart';
+import 'package:fibrohospital/utils/styles/Text_style/app_text_style.dart';
+import 'package:fibrohospital/utils/styles/assets/app_assets.dart';
+import 'package:fibrohospital/utils/styles/colors/app_colors.dart';
+import 'package:fibrohospital/utils/widgets/custom_arrow_back.dart';
+import 'package:fibrohospital/utils/widgets/custom_background.dart';
+import 'package:fibrohospital/utils/widgets/custom_elevated_button.dart';
 import 'package:flutter/material.dart';
 import 'package:iconsax/iconsax.dart';
 
-class ProfilePatientScreen extends StatelessWidget {
-  const ProfilePatientScreen({super.key});
+class ProfilePatientScreen extends StatefulWidget {
+
   static const String routeName = 'ProfilePatientScreen';
+
+  @override
+  State<ProfilePatientScreen> createState() => _ProfilePatientScreenState();
+}
+
+class _ProfilePatientScreenState extends State<ProfilePatientScreen> {
+  TextEditingController ?patientNameController = TextEditingController();
+
+  TextEditingController ?patientContactNumberController = TextEditingController();
+
+  TextEditingController ?patientDateofbirthController = TextEditingController();
+
+  TextEditingController ?patientPasswordController = TextEditingController();
+
 
   @override
   Widget build(BuildContext context) {
@@ -90,7 +104,7 @@ class ProfilePatientScreen extends StatelessWidget {
                 ),
                 Expanded(
                   child:  ListView(
-                    children:const[
+                    children:[
                        Padding(
                         padding: EdgeInsets.only(left: 20.0, right: 20),
                         child: Column(
@@ -105,25 +119,25 @@ class ProfilePatientScreen extends StatelessWidget {
                             ),
                             CustomProfileTextField(
                                 icon: Iconsax.personalcard,
-                                labelName: AppStrings.name),
+                                labelName: AppStrings.name,pController: patientNameController,),
                             SizedBox(
                               height: 10,
                             ),
                             CustomProfileTextField(
                                 icon: Iconsax.password_check,
-                                labelName: AppStrings.password),
+                                labelName: AppStrings.password,pController: patientPasswordController,),
                             SizedBox(
                               height: 10,
                             ),
                             CustomProfileTextField(
                                 icon: Icons.phone,
-                                labelName: AppStrings.contactNumber),
+                                labelName: AppStrings.contactNumber,pController: patientContactNumberController,),
                             SizedBox(
                               height: 10,
                             ),
                             CustomProfileTextField(
                                 icon: Icons.date_range_rounded,
-                                labelName: AppStrings.dateOfBirth),
+                                labelName: AppStrings.dateOfBirth,pController: patientDateofbirthController,),
                             SizedBox(
                               height: 25,
                             ),

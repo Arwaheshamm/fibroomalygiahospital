@@ -1,5 +1,5 @@
-import 'package:fibromyalgia_hospital/screens/ahella/Core/widgets/scaffold_background.dart';
-import 'package:fibromyalgia_hospital/screens/ahella/Features/Store/Data/Models/store_model.dart';
+import 'package:fibrohospital/screens/ahella/Core/widgets/scaffold_background.dart';
+import 'package:fibrohospital/screens/ahella/Features/Store/Data/Models/store_model.dart';
 import 'package:flutter/material.dart';
 import 'widgets/equipment_info_view_body.dart';
 

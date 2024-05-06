@@ -1,10 +1,10 @@
-import 'package:fibromyalgia_hospital/core/local_database/catch_helper.dart';
-import 'package:fibromyalgia_hospital/screens/ui/initial_pages/views/on_boarding_screen.dart';
-import 'package:fibromyalgia_hospital/screens/ui/log_in_and_sign_in/join_us_screen.dart';
-import 'package:fibromyalgia_hospital/utils/styles/Strings/app_strings.dart';
-import 'package:fibromyalgia_hospital/utils/styles/Text_style/app_text_style.dart';
-import 'package:fibromyalgia_hospital/utils/styles/assets/app_assets.dart';
-import 'package:fibromyalgia_hospital/utils/widgets/custom_background.dart';
+import 'package:fibrohospital/core/local_database/catch_helper.dart';
+import 'package:fibrohospital/screens/ui/initial_pages/views/on_boarding_screen.dart';
+import 'package:fibrohospital/screens/ui/log_in_and_sign_in/join_us_screen.dart';
+import 'package:fibrohospital/utils/styles/Strings/app_strings.dart';
+import 'package:fibrohospital/utils/styles/Text_style/app_text_style.dart';
+import 'package:fibrohospital/utils/styles/assets/app_assets.dart';
+import 'package:fibrohospital/utils/widgets/custom_background.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 

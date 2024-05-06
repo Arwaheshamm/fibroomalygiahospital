@@ -1,4 +1,4 @@
-import 'package:fibromyalgia_hospital/screens/ahella/Core/widgets/scaffold_background.dart';
+import 'package:fibrohospital/screens/ahella/Core/widgets/scaffold_background.dart';
 import 'package:flutter/material.dart';
 
 import 'widgets/credit_details_view_body.dart';

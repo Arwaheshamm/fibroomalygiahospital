@@ -1,14 +1,14 @@
-import 'package:fibromyalgia_hospital/screens/ahella/Features/Laboratories/Presentation/views/laboratories_view.dart';
-import 'package:fibromyalgia_hospital/screens/ahella/Features/Store/Presentation/views/store_view.dart';
-import 'package:fibromyalgia_hospital/screens/ui/doctor/doctor_home/widgets/appointment_screen.dart';
-import 'package:fibromyalgia_hospital/utils/data/category_model.dart';
-import 'package:fibromyalgia_hospital/screens/ui/doctor/doctor_patient/custom_patient_appointment_container.dart';
-import 'package:fibromyalgia_hospital/screens/ui/general_screen/pharmaciess_screen.dart';
-import 'package:fibromyalgia_hospital/utils/styles/Strings/app_strings.dart';
-import 'package:fibromyalgia_hospital/utils/styles/Text_style/app_text_style.dart';
-import 'package:fibromyalgia_hospital/utils/styles/assets/app_assets.dart';
-import 'package:fibromyalgia_hospital/utils/styles/colors/app_colors.dart';
-import 'package:fibromyalgia_hospital/utils/widgets/custom_background.dart';
+import 'package:fibrohospital/screens/ahella/Features/Laboratories/Presentation/views/laboratories_view.dart';
+import 'package:fibrohospital/screens/ahella/Features/Store/Presentation/views/store_view.dart';
+import 'package:fibrohospital/screens/ui/doctor/doctor_home/widgets/appointment_screen.dart';
+import 'package:fibrohospital/utils/data/category_model.dart';
+import 'package:fibrohospital/screens/ui/doctor/doctor_patient/custom_patient_appointment_container.dart';
+import 'package:fibrohospital/screens/ui/general_screen/pharmaciess_screen.dart';
+import 'package:fibrohospital/utils/styles/Strings/app_strings.dart';
+import 'package:fibrohospital/utils/styles/Text_style/app_text_style.dart';
+import 'package:fibrohospital/utils/styles/assets/app_assets.dart';
+import 'package:fibrohospital/utils/styles/colors/app_colors.dart';
+import 'package:fibrohospital/utils/widgets/custom_background.dart';
 import 'package:flutter/material.dart';
 
 import '../../../ahella/Features/Diagnostics/Presentation/views/diagnostics_book_view.dart';

@@ -1,8 +1,9 @@
-import 'package:fibromyalgia_hospital/screens/ui/patient/patient_search_doctor/doctors_search_screen.dart';
-import 'package:fibromyalgia_hospital/screens/ui/patient/patient_chat/patient_chat_screen.dart';
-import 'package:fibromyalgia_hospital/screens/ui/patient/patient_home/patient_home_screen.dart';
-import 'package:fibromyalgia_hospital/screens/ui/patient/patient_setting/patient_setting_screen.dart';
-import 'package:fibromyalgia_hospital/utils/styles/colors/app_colors.dart';
+
+import 'package:fibrohospital/screens/ui/patient/patient_chat/patient_chat_screen.dart';
+import 'package:fibrohospital/screens/ui/patient/patient_home/patient_home_screen.dart';
+import 'package:fibrohospital/screens/ui/patient/patient_search_doctor/doctors_search_screen.dart';
+import 'package:fibrohospital/screens/ui/patient/patient_setting/patient_setting_screen.dart';
+import 'package:fibrohospital/utils/styles/colors/app_colors.dart';
 import 'package:flutter/material.dart';
 
 class GeneralPatientHomeScreen extends StatefulWidget {

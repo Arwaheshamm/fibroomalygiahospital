@@ -1,11 +1,11 @@
-import 'package:fibromyalgia_hospital/screens/screens_not_use/order_screen_model.dart';
-import 'package:fibromyalgia_hospital/screens/screens_not_use/custom_order_screen_container.dart';
-import 'package:fibromyalgia_hospital/utils/styles/Strings/app_strings.dart';
-import 'package:fibromyalgia_hospital/utils/styles/Text_style/app_text_style.dart';
-import 'package:fibromyalgia_hospital/utils/styles/colors/app_colors.dart';
-import 'package:fibromyalgia_hospital/utils/widgets/custom_arrow_back.dart';
-import 'package:fibromyalgia_hospital/utils/widgets/custom_background.dart';
-import 'package:fibromyalgia_hospital/utils/widgets/custom_search_bar.dart';
+import 'package:fibrohospital/screens/screens_not_use/order_screen_model.dart';
+import 'package:fibrohospital/screens/screens_not_use/custom_order_screen_container.dart';
+import 'package:fibrohospital/utils/styles/Strings/app_strings.dart';
+import 'package:fibrohospital/utils/styles/Text_style/app_text_style.dart';
+import 'package:fibrohospital/utils/styles/colors/app_colors.dart';
+import 'package:fibrohospital/utils/widgets/custom_arrow_back.dart';
+import 'package:fibrohospital/utils/widgets/custom_background.dart';
+import 'package:fibrohospital/utils/widgets/custom_search_bar.dart';
 import 'package:flutter/material.dart';
 
 class OrdersScreen extends StatelessWidget {

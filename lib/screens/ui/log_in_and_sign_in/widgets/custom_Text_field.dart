@@ -1,4 +1,4 @@
-import 'package:fibromyalgia_hospital/utils/styles/colors/app_colors.dart';
+import 'package:fibrohospital/utils/styles/colors/app_colors.dart';
 import 'package:flutter/material.dart';
 import 'package:iconsax/iconsax.dart';
 

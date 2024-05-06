@@ -1,6 +1,6 @@
 import 'dart:ui';
 
-import 'package:fibromyalgia_hospital/utils/styles/colors/app_colors.dart';
+import 'package:fibrohospital/utils/styles/colors/app_colors.dart';
 
 class TypesServicesModel {
   final String imagePath ;

@@ -1,4 +1,4 @@
-import 'package:fibromyalgia_hospital/screens/ahella/Core/theming/my_colors.dart';
+import 'package:fibrohospital/screens/ahella/Core/theming/my_colors.dart';
 import 'package:flutter/material.dart';
 
 class CustomElevatedButton extends StatelessWidget {
