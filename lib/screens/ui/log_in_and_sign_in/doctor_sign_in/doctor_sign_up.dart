@@ -27,6 +27,8 @@ class _DoctorSignUpState extends State<DoctorSignUp> {
   TextEditingController ?doctoremailController = TextEditingController();
   TextEditingController ?doctorpassController = TextEditingController();
   TextEditingController ?doctornameController = TextEditingController();
+  TextEditingController ?doctorExperienceController = TextEditingController();
+
   GlobalKey<FormState> doctoremailkey =GlobalKey();
   GlobalKey<FormState> doctorpasskey =GlobalKey();
   GlobalKey<FormState> doctornamekey =GlobalKey();
@@ -93,15 +95,21 @@ class _DoctorSignUpState extends State<DoctorSignUp> {
                     ),
                    CustomTextField(text: AppStrings.email,
                        tController: doctoremailController,formstate:doctoremailkey),
+
+
                     const SizedBox(
                       height: 10,
                     ),
-                     CustomTextField(
+                    // CustomTextField(
+                    //   text: AppStrings.experince,tController: doctorExperienceController,
+                    //   isPass: true,formstate:doctorpasskey,
+                    // ),
+                    // const SizedBox(
+                    //   height: 10,
+                    // ),
+                    CustomTextField(
                       text: AppStrings.password,tController: doctorpassController,
                       isPass: true,formstate:doctorpasskey,
-                    ),
-                    const SizedBox(
-                      height: 10,
                     ),
                     Row(
                       children: [
