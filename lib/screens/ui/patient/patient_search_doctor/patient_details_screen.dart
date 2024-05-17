@@ -1,4 +1,3 @@
-import 'package:fibrohospital/screens/ahella/Features/Diagnostics/Presentation/views/diagnostics_book_view.dart';
 import 'package:fibrohospital/screens/ui/patient/patient_setting/patient_profile/custom_profile_text_field.dart';
 import 'package:fibrohospital/utils/styles/Strings/app_strings.dart';
 import 'package:fibrohospital/utils/styles/Text_style/app_text_style.dart';
@@ -21,14 +20,14 @@ class PatientDetailsScreen extends StatefulWidget {
 
 class _PatientDetailsScreenState extends State<PatientDetailsScreen> {
   Object? val = -1;
-  TextEditingController ?patientNameController = TextEditingController();
+  TextEditingController? patientNameController = TextEditingController();
 
-  TextEditingController ?patientContactNumberController = TextEditingController();
+  TextEditingController? patientContactNumberController =
+      TextEditingController();
 
-  TextEditingController ?patientAgeController = TextEditingController();
+  TextEditingController? patientAgeController = TextEditingController();
 
-  TextEditingController ?patientEmailController = TextEditingController();
-
+  TextEditingController? patientEmailController = TextEditingController();
 
   @override
   Widget build(BuildContext context) {
@@ -75,15 +74,19 @@ class _PatientDetailsScreenState extends State<PatientDetailsScreen> {
                       child: Column(
                         crossAxisAlignment: CrossAxisAlignment.start,
                         children: [
-                           CustomProfileTextField(
-                              icon: Iconsax.personalcard,
-                              labelName: AppStrings.patientName,pController: patientNameController,),
+                          CustomProfileTextField(
+                            icon: Iconsax.personalcard,
+                            labelName: AppStrings.patientName,
+                            pController: patientNameController,
+                          ),
                           const SizedBox(
                             height: 20,
                           ),
-                           CustomProfileTextField(
-                              icon: Icons.date_range,
-                              labelName: AppStrings.age,pController: patientAgeController,),
+                          CustomProfileTextField(
+                            icon: Icons.date_range,
+                            labelName: AppStrings.age,
+                            pController: patientAgeController,
+                          ),
                           const SizedBox(
                             height: 20,
                           ),
@@ -163,14 +166,20 @@ class _PatientDetailsScreenState extends State<PatientDetailsScreen> {
                           ),
                           const SizedBox(
                             height: 20,
-                          ),  CustomProfileTextField(
-                              icon: Icons.phone,
-                              labelName: AppStrings.contactNumber,pController: patientContactNumberController,),
+                          ),
+                          CustomProfileTextField(
+                            icon: Icons.phone,
+                            labelName: AppStrings.contactNumber,
+                            pController: patientContactNumberController,
+                          ),
                           const SizedBox(
                             height: 20,
                           ),
                           CustomProfileTextField(
-                              icon: Icons.email, labelName: AppStrings.email,pController: patientEmailController,),
+                            icon: Icons.email,
+                            labelName: AppStrings.email,
+                            pController: patientEmailController,
+                          ),
                           const SizedBox(
                             height: 20,
                           ),
@@ -184,10 +193,17 @@ class _PatientDetailsScreenState extends State<PatientDetailsScreen> {
                   const Expanded(
                     child: SizedBox(),
                   ),
-                 // InkWell(Navigator.pushReplacementNamed(context,DiagnosticsBookView.routeName)),
-                   InkWell(onTap: () {Navigator.pushReplacement(
-                       context,MaterialPageRoute(builder: (context){return DiagnosticsTestView();}));
-                   },child: CustomButton(text: 'Done',)),
+                  // InkWell(Navigator.pushReplacementNamed(context,DiagnosticsBookView.routeName)),
+                  InkWell(
+                      onTap: () {
+                        Navigator.pushReplacement(context,
+                            MaterialPageRoute(builder: (context) {
+                          return DiagnosticsTestView();
+                        }));
+                      },
+                      child: CustomButton(
+                        text: 'Done',
+                      )),
                   const SizedBox(
                     height: 40,
                   ),

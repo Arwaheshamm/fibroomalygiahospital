@@ -5,6 +5,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
 
 import '../../../../../Core/helpers/show_successful_order_dialog.dart';
+
 class PaymentOptionsViewBody extends StatefulWidget {
   const PaymentOptionsViewBody({super.key});
 
@@ -32,8 +33,6 @@ class _PaymentOptionsViewBodyState extends State<PaymentOptionsViewBody> {
             ),
           ),
           const SizedBox(height: 34),
-
-
           SelectPaymentOptionWidget(
             title: 'Visa',
             isSelected: isVisaSelected,
@@ -44,9 +43,11 @@ class _PaymentOptionsViewBodyState extends State<PaymentOptionsViewBody> {
                 SvgPicture.asset('assets/ahella/master-card.svg'),
               ],
             ),
-
             onTap: () {
-              Navigator.pushReplacement(context, MaterialPageRoute(builder: (context){return CreditDetailsView(); }));
+              Navigator.pushReplacement(context,
+                  MaterialPageRoute(builder: (context) {
+                return const CreditDetailsView();
+              }));
               setState(() {
                 isVisaSelected = !isVisaSelected;
                 isCashSelected = false;
@@ -57,11 +58,11 @@ class _PaymentOptionsViewBodyState extends State<PaymentOptionsViewBody> {
           SelectPaymentOptionWidget(
             title: 'Cash on Delivery',
             isSelected: isCashSelected,
-            trailing: SvgPicture.asset('assets/ahella/Cash.svg', width:48, height:48),
-
+            trailing: SvgPicture.asset('assets/ahella/Cash.svg',
+                width: 48, height: 48),
             onTap: () {
               setState(() {
-                isCashSelected =  !isCashSelected;
+                isCashSelected = !isCashSelected;
                 isVisaSelected = false;
               });
             },

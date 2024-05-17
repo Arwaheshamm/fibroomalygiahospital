@@ -1,8 +1,4 @@
 import 'package:fibrohospital/screens/ahella/Features/Diagnostics/Presentation/views/diagnostics_book_view.dart';
-import 'package:fibrohospital/screens/ahella/Features/Laboratories/Presentation/views/laboratories_view.dart';
-import 'package:fibrohospital/screens/ahella/Features/Store/Presentation/views/store_view.dart';
-import 'package:fibrohospital/screens/ahella/Features/Home/Presentation/views/main_home_view.dart';
-import 'package:fibrohospital/screens/ahella/Features/Laboratories/Presentation/views/laboratories_view.dart';
 import 'package:fibrohospital/screens/ahella/Features/Store/Presentation/views/store_view.dart';
 import 'package:fibrohospital/screens/ui/patient/patient_home/medical_all_records_screen.dart';
 import 'package:fibrohospital/screens/ui/patient/patient_home/my_doctors_screen.dart';
@@ -165,10 +161,13 @@ class PatientHomeScreen extends StatelessWidget {
                         SizedBox(
                           height: MediaQuery.of(context).size.height * .28,
                           child: ListView.builder(
-                            itemCount: NewPopularDoctorModel.PopularDoctor.length,
+                            itemCount:
+                                NewPopularDoctorModel.PopularDoctor.length,
                             scrollDirection: Axis.horizontal,
                             itemBuilder: (context, index) {
-                              return  CustomPopularDoctorContainer(index: index,);
+                              return CustomPopularDoctorContainer(
+                                index: index,
+                              );
                             },
                           ),
                         ),
@@ -227,10 +226,10 @@ class PatientHomeScreen extends StatelessWidget {
                                           Image.asset(
                                             CategoryModel
                                                 .itemServices[index].imagePath,
-                                            fit: BoxFit.scaleDown, height: 50, width: 210,
-
+                                            fit: BoxFit.scaleDown,
+                                            height: 50,
+                                            width: 210,
                                           ),
-
                                           const SizedBox(
                                             height: 10,
                                           ),

@@ -12,7 +12,12 @@
           "package_name": "com.example.fibrohospital"
         }
       },
-      "oauth_client": [],
+      "oauth_client": [
+        {
+          "client_id": "520937292678-lpgcfdonct67ok35mccia1k4s26re2bd.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
       "api_key": [
         {
           "current_key": "AIzaSyC5wi8LPu4tIEYAZJgwFEQb65nW9MsQ-Ok"
@@ -20,7 +25,12 @@
       ],
       "services": {
         "appinvite_service": {
-          "other_platform_oauth_client": []
+          "other_platform_oauth_client": [
+            {
+              "client_id": "520937292678-lpgcfdonct67ok35mccia1k4s26re2bd.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
         }
       }
     }

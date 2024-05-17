@@ -14,16 +14,18 @@ class CustomForgetPassContainer extends StatefulWidget {
 }
 
 class _CustomForgetPassContainerState extends State<CustomForgetPassContainer> {
-  TextEditingController ?passController = TextEditingController();
+  TextEditingController? passController = TextEditingController();
 
-  GlobalKey<FormState>passKey  =GlobalKey();
+  GlobalKey<FormState> passKey = GlobalKey();
   @override
   Widget build(BuildContext context) {
-    double height = MediaQuery.of(context).size.height;
-    return SizedBox(
-      height: height * .45,
-      child: Padding(
-        padding: const EdgeInsets.all(20.0),
+    return Padding(
+      padding: EdgeInsets.only(
+        left: 20,
+        right: 20,
+        bottom: MediaQuery.of(context).viewInsets.bottom,
+      ),
+      child: SingleChildScrollView(
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
@@ -55,14 +57,16 @@ class _CustomForgetPassContainerState extends State<CustomForgetPassContainer> {
             const SizedBox(
               height: 25,
             ),
-            CustomTextField(text: AppStrings.email,
+            CustomTextField(
+                text: AppStrings.email,
                 tController: passController,
-            formstate:passKey),
+                formstate: passKey),
             const SizedBox(
               height: 30,
             ),
-            const Center(
+            Center(
                 child: CustomButton(
+              onTap: () => Navigator.pop(context),
               text: AppStrings.continueText,
             )),
           ],

@@ -1,8 +1,8 @@
 import 'package:fibrohospital/screens/ahella/Features/Store/Data/Models/store_model.dart';
 import 'package:fibrohospital/screens/ahella/Features/Store/Presentation/views/equipment_info_view.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter/widgets.dart';
 import 'package:flutter_rating_bar/flutter_rating_bar.dart';
+
 class StoreListViewItem extends StatelessWidget {
   const StoreListViewItem({
     super.key,
@@ -79,7 +79,7 @@ class StoreListViewItem extends StatelessWidget {
                           allowHalfRating: true,
                           itemCount: 5,
                           itemPadding:
-                          const EdgeInsets.symmetric(horizontal: 1.0),
+                              const EdgeInsets.symmetric(horizontal: 1.0),
                           itemBuilder: (context, _) => const Icon(
                             Icons.star,
                             color: Colors.amber,

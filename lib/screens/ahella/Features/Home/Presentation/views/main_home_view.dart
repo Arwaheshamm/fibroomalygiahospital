@@ -1,6 +1,5 @@
 import 'package:fibrohospital/screens/ahella/Core/theming/my_colors.dart';
 import 'package:fibrohospital/screens/ahella/Features/Home/Presentation/manager/nav_bar_cubit/nav_bar_cubit.dart';
-import 'package:fibrohospital/screens/ahella/Features/Laboratories/Presentation/views/laboratories_view.dart';
 import 'package:fibrohospital/screens/ahella/Features/Store/Presentation/views/store_view.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';

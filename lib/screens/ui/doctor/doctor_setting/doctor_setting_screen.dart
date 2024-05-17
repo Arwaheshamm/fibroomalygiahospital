@@ -1,4 +1,3 @@
-import 'package:fibrohospital/screens/ui/general_screen/Notifications_screen.dart';
 import 'package:fibrohospital/screens/ui/general_screen/help_center_screen.dart';
 import 'package:fibrohospital/screens/ui/general_screen/privacy_and_policy_screen.dart';
 import 'package:fibrohospital/screens/ui/doctor/doctor_setting/doctor_profile/profile_doctor_screen.dart';

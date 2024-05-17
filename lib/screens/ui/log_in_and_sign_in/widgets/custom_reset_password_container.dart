@@ -5,19 +5,33 @@ import 'package:fibrohospital/utils/styles/colors/app_colors.dart';
 import 'package:fibrohospital/utils/widgets/custom_elevated_button.dart';
 import 'package:flutter/material.dart';
 
-class CustomResetPasswordContainer extends StatelessWidget {
+class CustomResetPasswordContainer extends StatefulWidget {
+  const CustomResetPasswordContainer({super.key});
 
-  TextEditingController ?passController = TextEditingController();
-  TextEditingController ?rpassController = TextEditingController();
-  GlobalKey<FormState>rpassKey =GlobalKey();
-  GlobalKey<FormState> passKey  =GlobalKey();
+  @override
+  State<CustomResetPasswordContainer> createState() =>
+      _CustomResetPasswordContainerState();
+}
+
+class _CustomResetPasswordContainerState
+    extends State<CustomResetPasswordContainer> {
+  TextEditingController? passController = TextEditingController();
+
+  TextEditingController? rpassController = TextEditingController();
+
+  GlobalKey<FormState> rpassKey = GlobalKey();
+
+  GlobalKey<FormState> passKey = GlobalKey();
+
   @override
   Widget build(BuildContext context) {
-    double height = MediaQuery.of(context).size.height;
-    return SizedBox(
-      height: height * .60,
-      child: Padding(
-        padding: const EdgeInsets.all(20.0),
+    return Padding(
+      padding: EdgeInsets.only(
+        left: 20,
+        right: 20,
+        bottom: MediaQuery.of(context).viewInsets.bottom,
+      ),
+      child: SingleChildScrollView(
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
@@ -49,16 +63,28 @@ class CustomResetPasswordContainer extends StatelessWidget {
             const SizedBox(
               height: 25,
             ),
-             CustomTextField(text: AppStrings.newPassword,isPass: true,
-                 tController:passController,formstate:passKey ),
-            const SizedBox(height: 5,),
-             CustomTextField(text: AppStrings.reEnterPassword,
-                 isPass: true,tController: rpassController,formstate: rpassKey,),
+            CustomTextField(
+                text: AppStrings.newPassword,
+                isPass: true,
+                tController: passController,
+                formstate: passKey),
+            const SizedBox(
+              height: 5,
+            ),
+            CustomTextField(
+              text: AppStrings.reEnterPassword,
+              isPass: true,
+              tController: rpassController,
+              formstate: rpassKey,
+            ),
             const SizedBox(
               height: 30,
             ),
-            const Center(
+            Center(
                 child: CustomButton(
+              onTap: () {
+                Navigator.pop(context);
+              },
               text: AppStrings.updatePassword,
             )),
           ],
