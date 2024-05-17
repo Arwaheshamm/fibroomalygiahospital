@@ -1,3 +1,7 @@
+<<<<<<< HEAD
+=======
+import 'package:fibrohospital/screens/ahella/Features/Laboratories/Presentation/views/laboratories_view.dart';
+>>>>>>> 7edc303abd569c92aaa0eb4960a14c1d6ee5ff3e
 import 'package:fibrohospital/screens/ahella/Features/Store/Presentation/views/store_view.dart';
 import 'package:fibrohospital/screens/ui/doctor/doctor_home/widgets/appointment_screen.dart';
 import 'package:fibrohospital/utils/data/category_model.dart';

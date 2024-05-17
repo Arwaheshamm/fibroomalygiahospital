@@ -4,6 +4,10 @@ import '../../../utils/styles/Text_style/app_text_style.dart';
 import '../../../utils/styles/assets/app_assets.dart';
 import '../../../utils/styles/colors/app_colors.dart';
 import '../../../utils/widgets/custom_arrow_back.dart';
+<<<<<<< HEAD
+=======
+import '../../../utils/widgets/custom_background.dart';
+>>>>>>> 7edc303abd569c92aaa0eb4960a14c1d6ee5ff3e
 
 class EzabyPharmacy extends StatelessWidget {
   const EzabyPharmacy({super.key});
@@ -53,7 +57,12 @@ class EzabyPharmacy extends StatelessWidget {
                 const SizedBox(
                   height: 20,
                 ),
+<<<<<<< HEAD
                 const Text(" 25% off ",
+=======
+                const Text(
+                    " 25% off ",
+>>>>>>> 7edc303abd569c92aaa0eb4960a14c1d6ee5ff3e
                     textAlign: TextAlign.center,
                     style: TextStyle(
                       color: Colors.white,
@@ -66,13 +75,21 @@ class EzabyPharmacy extends StatelessWidget {
                 ),
                 const Text(
                     "Get 25% off of purchases. When you go to the store, Scan the Qr code from your nearest branch",
+<<<<<<< HEAD
                     textAlign: TextAlign.left,
+=======
+                    textAlign:TextAlign.left,
+>>>>>>> 7edc303abd569c92aaa0eb4960a14c1d6ee5ff3e
                     style: TextStyle(
                       color: Colors.white,
                       fontSize: 18,
                       fontWeight: FontWeight.normal,
                       wordSpacing: 1,
                     )),
+<<<<<<< HEAD
+=======
+
+>>>>>>> 7edc303abd569c92aaa0eb4960a14c1d6ee5ff3e
                 const SizedBox(
                   height: 25,
                 ),

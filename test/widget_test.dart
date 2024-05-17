@@ -8,6 +8,10 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_test/flutter_test.dart';
 
+<<<<<<< HEAD
+=======
+import 'package:fibrohospital/main.dart';
+>>>>>>> 7edc303abd569c92aaa0eb4960a14c1d6ee5ff3e
 
 void main() {
   testWidgets('Counter increments smoke test', (WidgetTester tester) async {

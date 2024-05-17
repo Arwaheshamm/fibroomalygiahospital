@@ -4,6 +4,10 @@ import '../../../utils/styles/Text_style/app_text_style.dart';
 import '../../../utils/styles/assets/app_assets.dart';
 import '../../../utils/styles/colors/app_colors.dart';
 import '../../../utils/widgets/custom_arrow_back.dart';
+<<<<<<< HEAD
+=======
+import '../../../utils/widgets/custom_background.dart';
+>>>>>>> 7edc303abd569c92aaa0eb4960a14c1d6ee5ff3e
 
 class NineteenPharmacy extends StatelessWidget {
   const NineteenPharmacy({super.key});

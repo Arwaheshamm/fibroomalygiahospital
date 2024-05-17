@@ -1,5 +1,9 @@
 import 'package:fibrohospital/screens/ui/patient/patient_search_doctor/widgets/doctor_details/doctor_details_screen.dart';
 import 'package:fibrohospital/utils/styles/Text_style/app_text_style.dart';
+<<<<<<< HEAD
+=======
+import 'package:fibrohospital/utils/styles/assets/app_assets.dart';
+>>>>>>> 7edc303abd569c92aaa0eb4960a14c1d6ee5ff3e
 import 'package:fibrohospital/utils/styles/colors/app_colors.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_rating_bar/flutter_rating_bar.dart';
@@ -7,9 +11,14 @@ import 'package:flutter_rating_bar/flutter_rating_bar.dart';
 import '../data/newpopulardoctormodel.dart';
 
 class CustomPopularDoctorContainer extends StatelessWidget {
+<<<<<<< HEAD
   final int index;
   const CustomPopularDoctorContainer({
     super.key,
+=======
+  final int index ;
+  const CustomPopularDoctorContainer({super.key,
+>>>>>>> 7edc303abd569c92aaa0eb4960a14c1d6ee5ff3e
     required this.index,
   });
 
@@ -20,7 +29,11 @@ class CustomPopularDoctorContainer extends StatelessWidget {
     return Padding(
       padding: const EdgeInsets.only(right: 10.0),
       child: InkWell(
+<<<<<<< HEAD
         onTap: () {
+=======
+        onTap: (){
+>>>>>>> 7edc303abd569c92aaa0eb4960a14c1d6ee5ff3e
           Navigator.pushNamed(context, DoctorDetailsScreen.routeName);
         },
         child: Container(
@@ -35,15 +48,25 @@ class CustomPopularDoctorContainer extends StatelessWidget {
               Image.asset(
                 "${NewPopularDoctorModel.PopularDoctor[index].imagePath}",
                 fit: BoxFit.cover,
+<<<<<<< HEAD
                 height: height * .15,
+=======
+                height: height*.15,
+>>>>>>> 7edc303abd569c92aaa0eb4960a14c1d6ee5ff3e
               ),
               const SizedBox(
                 height: 5,
               ),
+<<<<<<< HEAD
               Text(
                 NewPopularDoctorModel.PopularDoctor[index].Name,
                 style: AppTextStyle.styleRegular15
                     .copyWith(color: AppColors.blackTextColor),
+=======
+               Text(
+                NewPopularDoctorModel.PopularDoctor[index].Name,
+                style: AppTextStyle.styleRegular15.copyWith(color: AppColors.blackTextColor),
+>>>>>>> 7edc303abd569c92aaa0eb4960a14c1d6ee5ff3e
               ),
               const SizedBox(
                 height: 5,

@@ -1,6 +1,10 @@
 import 'package:fibrohospital/screens/ui/patient/patient_search_doctor/widgets/book_doctor/custom_availiable_time_widget.dart';
 import 'package:fibrohospital/screens/ui/patient/patient_search_doctor/widgets/book_doctor/custom_date_time_container.dart';
 import 'package:fibrohospital/screens/ui/patient/patient_search_doctor/widgets/book_doctor/custom_no_availiable_time_widget.dart';
+<<<<<<< HEAD
+=======
+import 'package:fibrohospital/screens/ui/patient/patient_search_doctor/custom_search_docrors_container.dart';
+>>>>>>> 7edc303abd569c92aaa0eb4960a14c1d6ee5ff3e
 import 'package:fibrohospital/utils/styles/Strings/app_strings.dart';
 import 'package:fibrohospital/utils/styles/Text_style/app_text_style.dart';
 import 'package:fibrohospital/utils/styles/colors/app_colors.dart';
@@ -69,9 +73,13 @@ class SelectTimeScreen extends StatelessWidget {
                       : const CustomNoAvailiableTimeWidget(),
                   const Expanded(child: SizedBox()),
                   const Center(child: CustomButton(text: 'Saved')),
+<<<<<<< HEAD
                   const SizedBox(
                     height: 30,
                   )
+=======
+                  const SizedBox(height: 30,)
+>>>>>>> 7edc303abd569c92aaa0eb4960a14c1d6ee5ff3e
                 ],
               ),
             )

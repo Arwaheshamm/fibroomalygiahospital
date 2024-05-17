@@ -1,4 +1,8 @@
 import 'package:fibrohospital/screens/ui/doctor/doctor_setting/custom_doctor_notification_container.dart';
+<<<<<<< HEAD
+=======
+import 'package:fibrohospital/utils/widgets/custom_notification_container.dart';
+>>>>>>> 7edc303abd569c92aaa0eb4960a14c1d6ee5ff3e
 import 'package:fibrohospital/utils/styles/Strings/app_strings.dart';
 import 'package:fibrohospital/utils/styles/Text_style/app_text_style.dart';
 import 'package:fibrohospital/utils/styles/colors/app_colors.dart';

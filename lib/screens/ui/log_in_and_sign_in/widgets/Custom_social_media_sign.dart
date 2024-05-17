@@ -12,6 +12,7 @@ class CustomSocialMediaContainer extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+<<<<<<< HEAD
     return Container(
       padding: const EdgeInsets.all(15),
       decoration: BoxDecoration(
@@ -32,6 +33,41 @@ class CustomSocialMediaContainer extends StatelessWidget {
                 color: AppColors.greyTextColor, fontWeight: FontWeight.w400),
           )
         ],
+=======
+    double width = MediaQuery.of(context).size.width;
+    return Padding(
+      padding: const EdgeInsets.all(15.0),
+      child: SizedBox(
+        width: 150,
+        child: Container(
+          height: 50,
+          width: 130,
+          decoration: BoxDecoration(
+              color: AppColors.whiteColor,
+              borderRadius: BorderRadius.circular(12)),
+          child: Padding(
+            padding: const EdgeInsets.symmetric(horizontal: 8.0, vertical: 10),
+            child: Row(
+              mainAxisAlignment: MainAxisAlignment.center,
+              children: [
+                SvgPicture.asset(
+                  image,
+                  fit: BoxFit.scaleDown,
+                ),
+                const SizedBox(
+                  width: 10,
+                ),
+                Text(
+                  text,
+                  style: AppTextStyle.styleMedium18.copyWith(
+                      color: AppColors.greyTextColor,
+                      fontWeight: FontWeight.w400),
+                )
+              ],
+            ),
+          ),
+        ),
+>>>>>>> 7edc303abd569c92aaa0eb4960a14c1d6ee5ff3e
       ),
     );
   }

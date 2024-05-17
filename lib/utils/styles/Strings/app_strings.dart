@@ -17,6 +17,10 @@ class AppStrings {
   static const String joinAs = 'Join as';
   static const String patient = 'Patient';
   static const String doctor = 'Doctor';
+<<<<<<< HEAD
+=======
+  static const String experince = 'Years experince';
+>>>>>>> 7edc303abd569c92aaa0eb4960a14c1d6ee5ff3e
   static const String continueText = 'Continue';
   static const String patientSignUpTitle = 'Join us now dear patient';
   static const String doctorSignUpTitle = 'Join us now dear doctor';

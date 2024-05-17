@@ -172,19 +172,33 @@ class DoctorDetailsScreen extends StatelessWidget {
                                         CustomButton(text: AppStrings.bookNow,onTap: (){
                                           Navigator.pushNamed(context, DoctorAppointmentScreen.routeName);
                                         },),
+<<<<<<< HEAD
                                   )
+=======
+
+                                  ),
+                                  
+>>>>>>> 7edc303abd569c92aaa0eb4960a14c1d6ee5ff3e
                                 ],
                               ),
                             ),
                           ),
                         ),
                         const SizedBox(
+<<<<<<< HEAD
                           height: 20,
+=======
+                          height: 10,
+>>>>>>> 7edc303abd569c92aaa0eb4960a14c1d6ee5ff3e
                         ),
                         Padding(
                           padding: const EdgeInsets.only(right: 5, left: 5),
                           child: Container(
+<<<<<<< HEAD
                             height: height * .12,
+=======
+                            height: height * .1,
+>>>>>>> 7edc303abd569c92aaa0eb4960a14c1d6ee5ff3e
                             width: width,
                             decoration: BoxDecoration(
                                 borderRadius: BorderRadius.circular(15),

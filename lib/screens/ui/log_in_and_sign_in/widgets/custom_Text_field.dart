@@ -4,10 +4,17 @@ import 'package:iconsax/iconsax.dart';
 
 class CustomTextField extends StatefulWidget {
   final IconData? icon;
+<<<<<<< HEAD
   TextEditingController? tController = TextEditingController();
   final String text;
   final bool isPass;
   GlobalKey<FormState> formstate = GlobalKey();
+=======
+  TextEditingController ?tController = TextEditingController();
+  final String text;
+  final bool isPass;
+  GlobalKey<FormState> formstate =GlobalKey();
+>>>>>>> 7edc303abd569c92aaa0eb4960a14c1d6ee5ff3e
 
   CustomTextField({
     super.key,
@@ -16,6 +23,10 @@ class CustomTextField extends StatefulWidget {
     required this.text,
     this.isPass = false,
     required this.formstate,
+<<<<<<< HEAD
+=======
+
+>>>>>>> 7edc303abd569c92aaa0eb4960a14c1d6ee5ff3e
   });
 
   @override
@@ -23,31 +34,52 @@ class CustomTextField extends StatefulWidget {
 }
 
 class _CustomTextFieldState extends State<CustomTextField> {
+<<<<<<< HEAD
+=======
+
+
+
+>>>>>>> 7edc303abd569c92aaa0eb4960a14c1d6ee5ff3e
   bool obscure = true;
   @override
   Widget build(BuildContext context) {
     return Padding(
       padding: const EdgeInsets.only(top: 16),
       child: TextFormField(
+<<<<<<< HEAD
         key: widget.formstate,
         controller: widget.tController,
         onChanged: (value) {
           setState(() {
             widget.tController!.text = value;
+=======
+        key:widget.formstate,
+        controller: widget.tController ,
+        onChanged: (value){
+          setState(() {
+            widget.tController!.text=value;
+>>>>>>> 7edc303abd569c92aaa0eb4960a14c1d6ee5ff3e
             print(widget.tController);
           });
         },
         validator: (value) {
+<<<<<<< HEAD
           if (value!.isEmpty) {
             return "TextField is Empty";
           }
           return null;
+=======
+          if(value!.isEmpty){
+            return "TextField is Empty";
+          }
+>>>>>>> 7edc303abd569c92aaa0eb4960a14c1d6ee5ff3e
         },
         obscureText: widget.isPass ? obscure : false,
         cursorColor: AppColors.greyTextColor,
         decoration: InputDecoration(
           suffixIcon: widget.isPass
               ? IconButton(
+<<<<<<< HEAD
                   onPressed: () {
                     setState(() {
                       obscure = !obscure;
@@ -57,6 +89,14 @@ class _CustomTextFieldState extends State<CustomTextField> {
                     Iconsax.eye_slash,
                     color: AppColors.greyTextColor,
                   ))
+=======
+              onPressed: () {
+                setState(() {
+                  obscure = !obscure;
+                });
+              },
+              icon: const Icon(Iconsax.eye_slash,color: AppColors.greyTextColor,))
+>>>>>>> 7edc303abd569c92aaa0eb4960a14c1d6ee5ff3e
               : const SizedBox(),
           focusedBorder: OutlineInputBorder(
               borderRadius: BorderRadius.circular(10),
@@ -65,13 +105,18 @@ class _CustomTextFieldState extends State<CustomTextField> {
               borderRadius: BorderRadius.circular(10),
               borderSide: const BorderSide(color: AppColors.greyWhite)),
           labelText: widget.text,
+<<<<<<< HEAD
           labelStyle:
               const TextStyle(color: AppColors.greyTextColor, fontSize: 17),
+=======
+          labelStyle: const TextStyle(color: AppColors.greyTextColor,fontSize: 17),
+>>>>>>> 7edc303abd569c92aaa0eb4960a14c1d6ee5ff3e
           border: OutlineInputBorder(borderRadius: BorderRadius.circular(10)),
         ),
       ),
     );
   }
+<<<<<<< HEAD
 }
 
 class CustomTextFieldTwo extends StatelessWidget {
@@ -133,3 +178,6 @@ class CustomTextFieldTwo extends StatelessWidget {
     );
   }
 }
+=======
+}
+>>>>>>> 7edc303abd569c92aaa0eb4960a14c1d6ee5ff3e

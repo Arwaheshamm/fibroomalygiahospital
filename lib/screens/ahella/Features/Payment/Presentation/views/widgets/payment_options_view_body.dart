@@ -5,7 +5,10 @@ import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
 
 import '../../../../../Core/helpers/show_successful_order_dialog.dart';
+<<<<<<< HEAD
 
+=======
+>>>>>>> 7edc303abd569c92aaa0eb4960a14c1d6ee5ff3e
 class PaymentOptionsViewBody extends StatefulWidget {
   const PaymentOptionsViewBody({super.key});
 
@@ -33,6 +36,11 @@ class _PaymentOptionsViewBodyState extends State<PaymentOptionsViewBody> {
             ),
           ),
           const SizedBox(height: 34),
+<<<<<<< HEAD
+=======
+
+
+>>>>>>> 7edc303abd569c92aaa0eb4960a14c1d6ee5ff3e
           SelectPaymentOptionWidget(
             title: 'Visa',
             isSelected: isVisaSelected,
@@ -43,11 +51,17 @@ class _PaymentOptionsViewBodyState extends State<PaymentOptionsViewBody> {
                 SvgPicture.asset('assets/ahella/master-card.svg'),
               ],
             ),
+<<<<<<< HEAD
             onTap: () {
               Navigator.pushReplacement(context,
                   MaterialPageRoute(builder: (context) {
                 return const CreditDetailsView();
               }));
+=======
+
+            onTap: () {
+              Navigator.pushReplacement(context, MaterialPageRoute(builder: (context){return CreditDetailsView(); }));
+>>>>>>> 7edc303abd569c92aaa0eb4960a14c1d6ee5ff3e
               setState(() {
                 isVisaSelected = !isVisaSelected;
                 isCashSelected = false;
@@ -58,11 +72,19 @@ class _PaymentOptionsViewBodyState extends State<PaymentOptionsViewBody> {
           SelectPaymentOptionWidget(
             title: 'Cash on Delivery',
             isSelected: isCashSelected,
+<<<<<<< HEAD
             trailing: SvgPicture.asset('assets/ahella/Cash.svg',
                 width: 48, height: 48),
             onTap: () {
               setState(() {
                 isCashSelected = !isCashSelected;
+=======
+            trailing: SvgPicture.asset('assets/ahella/Cash.svg', width:48, height:48),
+
+            onTap: () {
+              setState(() {
+                isCashSelected =  !isCashSelected;
+>>>>>>> 7edc303abd569c92aaa0eb4960a14c1d6ee5ff3e
                 isVisaSelected = false;
               });
             },

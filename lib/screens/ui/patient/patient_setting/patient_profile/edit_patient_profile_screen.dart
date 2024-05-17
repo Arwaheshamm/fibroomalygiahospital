@@ -1,8 +1,4 @@
 import 'package:fibrohospital/screens/ui/patient/patient_setting/patient_profile/custom_profile_text_field.dart';
-<<<<<<< HEAD
-=======
-import 'package:fibrohospital/screens/ui/patient/patient_setting/patient_profile/edit_patient_profile_screen.dart';
->>>>>>> 7edc303abd569c92aaa0eb4960a14c1d6ee5ff3e
 import 'package:fibrohospital/utils/styles/Strings/app_strings.dart';
 import 'package:fibrohospital/utils/styles/Text_style/app_text_style.dart';
 import 'package:fibrohospital/utils/styles/assets/app_assets.dart';
@@ -13,15 +9,15 @@ import 'package:fibrohospital/utils/widgets/custom_elevated_button.dart';
 import 'package:flutter/material.dart';
 import 'package:iconsax/iconsax.dart';
 
-class ProfilePatientScreen extends StatefulWidget {
+class EditPatientProfileScreen extends StatefulWidget {
 
-  static const String routeName = 'ProfilePatientScreen';
+  static const String routeName = 'EditPatientProfileScreen';
 
   @override
-  State<ProfilePatientScreen> createState() => _ProfilePatientScreenState();
+  State<EditPatientProfileScreen> createState() => _EditPatientProfileScreenState();
 }
 
-class _ProfilePatientScreenState extends State<ProfilePatientScreen> {
+class _EditPatientProfileScreenState extends State<EditPatientProfileScreen> {
   TextEditingController ?patientNameController = TextEditingController();
 
   TextEditingController ?patientContactNumberController = TextEditingController();
@@ -70,7 +66,6 @@ class _ProfilePatientScreenState extends State<ProfilePatientScreen> {
                         ),
                       ),
                       SizedBox(
-<<<<<<< HEAD
                         height: MediaQuery.of(context).size.height * .02,
                       ),
                       const Text(
@@ -78,8 +73,6 @@ class _ProfilePatientScreenState extends State<ProfilePatientScreen> {
                         style: AppTextStyle.styleMedium18,
                       ),
                       SizedBox(
-=======
->>>>>>> 7edc303abd569c92aaa0eb4960a14c1d6ee5ff3e
                         height: MediaQuery.of(context).size.height * .05,
                       ),
                       Stack(
@@ -97,13 +90,9 @@ class _ProfilePatientScreenState extends State<ProfilePatientScreen> {
                                 decoration: BoxDecoration(
                                     borderRadius: BorderRadius.circular(40),
                                     color: Colors.grey[400]),
-<<<<<<< HEAD
                                 child: IconButton(
                                     onPressed: () {},
                                     icon: const Icon(Iconsax.camera))),
-=======
-                            )
->>>>>>> 7edc303abd569c92aaa0eb4960a14c1d6ee5ff3e
                           )
                         ],
                       )
@@ -116,16 +105,11 @@ class _ProfilePatientScreenState extends State<ProfilePatientScreen> {
                 Expanded(
                   child:  ListView(
                     children:[
-                       Padding(
+                      Padding(
                         padding: EdgeInsets.only(left: 20.0, right: 20),
                         child: Column(
                           crossAxisAlignment: CrossAxisAlignment.start,
                           children: [
-<<<<<<< HEAD
-                            Text(
-                              AppStrings.personalInformation,
-                              style: AppTextStyle.styleMedium18,
-=======
                             Center(
                               child: Row(
                                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
@@ -134,52 +118,39 @@ class _ProfilePatientScreenState extends State<ProfilePatientScreen> {
                                     AppStrings.personalInformation,
                                     style: AppTextStyle.styleMedium18,
                                   ),
-                                  TextButton(
-                                    onPressed: () {
-                                      Navigator.pushReplacement(context,
-                                          MaterialPageRoute(builder: (context){return EditPatientProfileScreen();}));
-                                    },
-                                      child: Text(AppStrings.setUpYourProfile, style: AppTextStyle.styleRegular15.copyWith(
-                                          fontSize: 14, color: AppColors.greenColor),
-                                      ),
 
-                                  ),
                                 ],
                               ),
->>>>>>> 7edc303abd569c92aaa0eb4960a14c1d6ee5ff3e
                             ),
                             SizedBox(
                               height: 15,
                             ),
                             CustomProfileTextField(
-                                icon: Iconsax.personalcard,
-                                labelName: AppStrings.name,pController: patientNameController,),
+                              icon: Iconsax.personalcard,
+                              labelName: AppStrings.name,pController: patientNameController,),
                             SizedBox(
                               height: 10,
                             ),
                             CustomProfileTextField(
-                                icon: Iconsax.password_check,
-                                labelName: AppStrings.password,pController: patientPasswordController,),
+                              icon: Iconsax.password_check,
+                              labelName: AppStrings.password,pController: patientPasswordController,),
                             SizedBox(
                               height: 10,
                             ),
                             CustomProfileTextField(
-                                icon: Icons.phone,
-                                labelName: AppStrings.contactNumber,pController: patientContactNumberController,),
+                              icon: Icons.phone,
+                              labelName: AppStrings.contactNumber,pController: patientContactNumberController,),
                             SizedBox(
                               height: 10,
                             ),
                             CustomProfileTextField(
-                                icon: Icons.date_range_rounded,
-                                labelName: AppStrings.dateOfBirth,pController: patientDateofbirthController,),
+                              icon: Icons.date_range_rounded,
+                              labelName: AppStrings.dateOfBirth,pController: patientDateofbirthController,),
                             SizedBox(
                               height: 25,
                             ),
-<<<<<<< HEAD
                             Center(child: CustomButton(text: 'Change my information')),
                             SizedBox(height: 20,),
-=======
->>>>>>> 7edc303abd569c92aaa0eb4960a14c1d6ee5ff3e
 
                           ],
                         ),

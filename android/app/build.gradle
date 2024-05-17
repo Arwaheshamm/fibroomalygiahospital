@@ -1,9 +1,12 @@
 plugins {
     id "com.android.application"
+<<<<<<< HEAD
     // START: FlutterFire Configuration
     id 'com.google.gms.google-services'
     id 'com.google.firebase.crashlytics'
     // END: FlutterFire Configuration
+=======
+>>>>>>> 7edc303abd569c92aaa0eb4960a14c1d6ee5ff3e
     id "kotlin-android"
     id "dev.flutter.flutter-gradle-plugin"
 }
@@ -28,7 +31,11 @@ if (flutterVersionName == null) {
 
 android {
     namespace "com.example.fibrohospital"
+<<<<<<< HEAD
     compileSdkVersion flutter.compileSdkVersion
+=======
+    compileSdkVersion 34
+>>>>>>> 7edc303abd569c92aaa0eb4960a14c1d6ee5ff3e
     ndkVersion flutter.ndkVersion
 
     compileOptions {
@@ -59,7 +66,11 @@ android {
     buildTypes {
         release {
             // TODO: Add your own signing config for the release build.
+<<<<<<< HEAD
             // Signing with the debug keys for now, so `flutter run --release` works.
+=======
+            // Signing with the debug keys for now, so flutter run --release works.
+>>>>>>> 7edc303abd569c92aaa0eb4960a14c1d6ee5ff3e
             signingConfig signingConfigs.debug
         }
     }

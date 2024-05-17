@@ -1,5 +1,9 @@
 import 'package:fibrohospital/screens/ahella/Core/widgets/custom_elevated_button.dart';
 import 'package:fibrohospital/screens/ahella/Features/Store/Presentation/views/store_view.dart';
+<<<<<<< HEAD
+=======
+import 'package:fibrohospital/screens/ui/doctor/general_doctor_home_screen.dart';
+>>>>>>> 7edc303abd569c92aaa0eb4960a14c1d6ee5ff3e
 import 'package:fibrohospital/utils/constants.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
@@ -61,10 +65,14 @@ Future<dynamic> showSuccessfulOrderDialog(BuildContext context) {
             ),
             const SizedBox(height: 8),
             TextButton(
+<<<<<<< HEAD
               onPressed: () => Navigator.pushReplacement(context,
                   MaterialPageRoute(builder: (context) {
                 return StoreView();
               })),
+=======
+              onPressed: () => Navigator.pushReplacement(context, MaterialPageRoute(builder: (context){return StoreView(); })),
+>>>>>>> 7edc303abd569c92aaa0eb4960a14c1d6ee5ff3e
               child: const Text(
                 'Continue ',
                 style: TextStyle(

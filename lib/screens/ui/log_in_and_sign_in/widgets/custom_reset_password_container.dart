@@ -5,6 +5,7 @@ import 'package:fibrohospital/utils/styles/colors/app_colors.dart';
 import 'package:fibrohospital/utils/widgets/custom_elevated_button.dart';
 import 'package:flutter/material.dart';
 
+<<<<<<< HEAD
 class CustomResetPasswordContainer extends StatefulWidget {
   const CustomResetPasswordContainer({super.key});
 
@@ -32,6 +33,21 @@ class _CustomResetPasswordContainerState
         bottom: MediaQuery.of(context).viewInsets.bottom,
       ),
       child: SingleChildScrollView(
+=======
+class CustomResetPasswordContainer extends StatelessWidget {
+
+  TextEditingController ?passController = TextEditingController();
+  TextEditingController ?rpassController = TextEditingController();
+  GlobalKey<FormState>rpassKey =GlobalKey();
+  GlobalKey<FormState> passKey  =GlobalKey();
+  @override
+  Widget build(BuildContext context) {
+    double height = MediaQuery.of(context).size.height;
+    return SizedBox(
+      height: height * .60,
+      child: Padding(
+        padding: const EdgeInsets.all(20.0),
+>>>>>>> 7edc303abd569c92aaa0eb4960a14c1d6ee5ff3e
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
@@ -63,6 +79,7 @@ class _CustomResetPasswordContainerState
             const SizedBox(
               height: 25,
             ),
+<<<<<<< HEAD
             CustomTextField(
                 text: AppStrings.newPassword,
                 isPass: true,
@@ -85,6 +102,18 @@ class _CustomResetPasswordContainerState
               onTap: () {
                 Navigator.pop(context);
               },
+=======
+             CustomTextField(text: AppStrings.newPassword,isPass: true,
+                 tController:passController,formstate:passKey ),
+            const SizedBox(height: 5,),
+             CustomTextField(text: AppStrings.reEnterPassword,
+                 isPass: true,tController: rpassController,formstate: rpassKey,),
+            const SizedBox(
+              height: 30,
+            ),
+            const Center(
+                child: CustomButton(
+>>>>>>> 7edc303abd569c92aaa0eb4960a14c1d6ee5ff3e
               text: AppStrings.updatePassword,
             )),
           ],

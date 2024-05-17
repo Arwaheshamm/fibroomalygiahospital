@@ -1,3 +1,7 @@
+<<<<<<< HEAD
+=======
+import 'package:fibrohospital/screens/ui/general_screen/Notifications_screen.dart';
+>>>>>>> 7edc303abd569c92aaa0eb4960a14c1d6ee5ff3e
 import 'package:fibrohospital/screens/ui/general_screen/help_center_screen.dart';
 import 'package:fibrohospital/screens/ui/general_screen/privacy_and_policy_screen.dart';
 import 'package:fibrohospital/screens/ui/doctor/doctor_setting/doctor_profile/profile_doctor_screen.dart';
